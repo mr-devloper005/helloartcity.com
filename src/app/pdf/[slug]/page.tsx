@@ -10,6 +10,9 @@ import { buildPostUrl, fetchTaskPostBySlug, fetchTaskPosts } from "@/lib/task-da
 import { SITE_CONFIG } from "@/lib/site-config";
 import { LIGHT_PAGE_SURFACE } from "@/lib/light-page-surface";
 
+
+export const dynamic = "force-dynamic";
+export const fetchCache = "force-no-store";
 export const revalidate = 3;
 
 export async function generateStaticParams() {
